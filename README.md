@@ -1,0 +1,1 @@
+# lote-conteiner-docker-shellscript
