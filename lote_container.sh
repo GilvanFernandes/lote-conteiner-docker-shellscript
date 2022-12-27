@@ -20,14 +20,14 @@ main() {
         local current_date=$(date)
         
         # Remove container caso exista para não haver conflito
-        echo "* Removendo o container criado: nmap_container_$i"
-        docker rm "nmap_container_$i"
+        echo "* Removendo o container criado: script_container_$i"
+        docker rm "script_container_$i"
 
         #Cria um container com o nmap e o Ubuntu
-        docker run -d --name "nmap_container_$i" ubuntu:latest
+        docker run -d --name "script_container_$i" ubuntu:latest
 
         #Imprime o nome do container criado e a data atual
-        echo "* Container criado: nmap_container_$i em $current_date"
+        echo "* Container criado: script_container_$i em $current_date"
 
     done
 }
